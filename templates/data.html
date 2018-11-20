@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+   <body>
+   
+      <table border = 1>
+         <thead>
+            <td><b>Name</b></td>
+            <td><b>Age</b></td>
+            <td><b>Gender</b></td>
+         </thead>
+         
+         {% for row in rows %}
+            <tr>
+               <td>{{row["name"]}}</td>
+               <td>{{row["age"]}}</td>
+               <td> {{ row["gender"]}}</td>	
+            </tr>
+         {% endfor %}
+      </table>
+	<br>      
+      <button onclick="location.href='/'" type="button">Form</button>
+      
+   </body>
+</html>
